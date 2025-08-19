@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      /* Element Selector  */
+      /* div{
+            background-color: red;
+        } */
+
+      /* Class Selector */
+      /* .red{
+            background-color: red;
+         }
+
+      /* ID Selector */
+      /* #green{
+            background-color: green;
+          }  */
+
+      /* Child Selector  */
+      /* div>p{
+            background-color: lavender;
+            color: teal;
+           }
+            div>article>p{
+                background-color: black;
+                color: white;
+            } */
+
+        /* Descendent Selector */
+        /* div p{
+            background-color: blue;
+            color: aliceblue;
+        } */
+
+        /* Universal Selector  */
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+
+        /* Pseudo Selector */
+        /* a:visited{
+            color: red;
+        } */
+         /* a:link{
+            color: blue;
+         } */
+          /* a:active{
+            background-color: yellow;
+          }
+          a:hover{
+            background-color: teal;
+          } */
+        p:first-child{
+            background-color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="red">
+      I am a div
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, omnis
+        voluptatem!
+      </p>
+    </div>
+    <div id="green">
+      I am another div
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+          omnis voluptatem!
+        </p>
+      </article>
+    </div>
+    <a href="http://www.google.com">GO TO GOOGLE</a>
+    <div class="one">
+      I am number 1
+      <p>I am first</p>
+      <p>I am second</p>
+    </div>
+  </body>
+</html>
