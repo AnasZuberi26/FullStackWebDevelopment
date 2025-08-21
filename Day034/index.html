@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        .cards{
+            display: flow-root;
+            border: 2px solid black;
+        }
+        img{
+            /* float: right; */
+            float: left;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img width="230" src="image.jpg" alt="Man in boat">
+        <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea commodi saepe, laboriosam mollitia esse numquam, voluptate, adipisci architecto velit odio fugiat. Modi, quo!Lorem ipsum dolor sit amet consectetur adipisicing elit. A deserunt est officiis explicabo ab facere exercitationem unde, hic ipsum omnis vero itaque nulla rem non reprehenderit optio. Esse adipisci, ducimus praesentium natus molestias id?</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi hic voluptatum non obcaecati cum deserunt, perspiciatis architecto culpa recusandae est iusto magni itaque corrupti, quas aliquam quam ratione placeat porro reprehenderit in. Odit minus, architecto quis ab sunt praesentium voluptatum impedit quo exercitationem provident voluptate minima sit aut, eveniet sint, cupiditate et quibusdam eos veritatis id commodi distinctio repudiandae voluptates facere? Neque ratione quos qui natus temporibus similique quibusdam, ad deserunt ex quasi vitae possimus quisquam provident repellat, a totam voluptates magni consequatur dignissimos cupiditate labore quod fuga nihil fugit? Dignissimos fuga enim assumenda laudantium eos doloremque facilis accusamus quaerat atque amet, tenetur reprehenderit ipsa recusandae? Tempora earum doloremque illum in similique magni, voluptates perferendis veritatis blanditiis consequuntur dolore alias neque, sequi voluptate incidunt quidem maiores architecto labore deleniti molestiae, quasi facilis veniam obcaecati! Eveniet quidem nulla at nihil labore rerum optio blanditiis enim et?</div>
+        <div class="card">Card-3</div>
+    </div>
+</body>
+</html>
