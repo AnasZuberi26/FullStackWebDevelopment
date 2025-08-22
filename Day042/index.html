@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform and Translate</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* transform: rotate(45deg); */
+            /* transform: rotate(0.125turn); */
+            /* transform: rotate(0.5turn); */
+            /* transform: rotate(1turn); */
+            
+            /* transform: rotateX(45deg); */
+            /* transform: rotateY(45deg); */
+            /* transform: rotateZ(45deg); */
+
+            /* transform: scale(1.5); */
+            /* transform: scaleX(1.5); */
+
+            /* transform: skew(15deg); */
+            /* transform: skewX(15deg); */
+            /* transform: skewY(15deg); */
+
+            /* transform: translate(34px); */
+            /* transform: translate(100%); */
+            transform: translateX(100%) translateY(100%) skew(15deg) rotate(45deg) scale(1.25);
+            transform-origin: 50% 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>
