@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations in CSS</title>
+    <style>
+      .container {
+        height: 80vh;
+        width: 30vw;
+        background-color: rgb(12, 129, 129);
+      }
+      .box {
+        width: 34px;
+        height: 45px;
+        background-color: aqua;
+        /* animation: anime; */
+        /* animation-delay: 1s; */
+        /* animation-duration: 3s; */
+        /* animation-iteration-count: 2; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-direction: alternate-reverse; */
+        /* animation-play-state: paused; */
+        animation: anime 3s ease-in-out 1s 1, anime2 3s ease-in-out 1s 1;
+      }
+      @keyframes anime {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: yellow;
+          transform: translateX(1000px);
+        }
+      }
+      @keyframes anime2 {
+        0%{
+            transform: rotate(100deg);
+        }
+        20%{
+            transform: rotate(150deg);
+        }
+        50%{
+            transform: rotate(200deg);
+        }
+        100%{
+            transform: rotate(250deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

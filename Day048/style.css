@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 90vh;
+  width: 100vw;
+  background-color: rgb(195, 195, 214);
+  position: relative;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(44, 177, 177);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  animation: firstX 2s forwards, secondY 2s cubic-bezier(0, 0, 0.41, 1.04) infinite alternate 2s;
+}
+
+@keyframes firstX {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(50vw - 50px));
+    }
+}
+
+@keyframes secondY {
+    from{
+        transform: translateY(0) translateX(calc(50vw - 50px));
+    }   
+    to{
+        transform: translateY(-45vh) translateX(calc(50vw - 50px));
+    } 
+}
