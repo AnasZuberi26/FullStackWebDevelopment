@@ -52,45 +52,95 @@
 
 // -------------------------PKR Demolisition-------------------------
 
-let amount = 38;
+// let amount = 38;
 
-if(amount >= 5000){
-    console.log("5000 Notes: " +Math.floor(amount/5000));
-    amount %= 5000;
-}
-if(amount >= 1000){
-    console.log("1000 Notes: " +Math.floor(amount/1000));
-    amount %= 1000;
-}
-if(amount >= 500){
-    console.log("500 Notes: " +Math.floor(amount/500));
-    amount %= 500;
-}
-if(amount >= 100){
-    console.log("100 Notes: " +Math.floor(amount/100));
-    amount %= 100;
-}
-if(amount >= 50){
-    console.log("50 Notes: " +Math.floor(amount/50));
-    amount %= 50;
-}
-if(amount >= 20){
-    console.log("20 Notes: " +Math.floor(amount/20));
-    amount %= 20;
-}
-if(amount >= 10){
-    console.log("10 Notes: " +Math.floor(amount/10));
-    amount %= 10;
-}
-if(amount >= 5){
-    console.log("5 Coins: " +Math.floor(amount/5));
-    amount %= 5;
-}
-if(amount >= 2){
-    console.log("2 Coins: " +Math.floor(amount/2));
-    amount %= 2;
-}
-if(amount >= 1){
-    console.log("1 Coins: " +Math.floor(amount/1));
-    amount %= 1;
+// if(amount >= 5000){
+//     console.log("5000 Notes: " +Math.floor(amount/5000));
+//     amount %= 5000;
+// }
+// if(amount >= 1000){
+//     console.log("1000 Notes: " +Math.floor(amount/1000));
+//     amount %= 1000;
+// }
+// if(amount >= 500){
+//     console.log("500 Notes: " +Math.floor(amount/500));
+//     amount %= 500;
+// }
+// if(amount >= 100){
+//     console.log("100 Notes: " +Math.floor(amount/100));
+//     amount %= 100;
+// }
+// if(amount >= 50){
+//     console.log("50 Notes: " +Math.floor(amount/50));
+//     amount %= 50;
+// }
+// if(amount >= 20){
+//     console.log("20 Notes: " +Math.floor(amount/20));
+//     amount %= 20;
+// }
+// if(amount >= 10){
+//     console.log("10 Notes: " +Math.floor(amount/10));
+//     amount %= 10;
+// }
+// if(amount >= 5){
+//     console.log("5 Coins: " +Math.floor(amount/5));
+//     amount %= 5;
+// }
+// if(amount >= 2){
+//     console.log("2 Coins: " +Math.floor(amount/2));
+//     amount %= 2;
+// }
+// if(amount >= 1){
+//     console.log("1 Coins: " +Math.floor(amount/1));
+//     amount %= 1;
+// }
+
+// -------------------------Ternary Opetators-------------------------
+
+// 12>13 ? console.log('True') : console.log('False');
+
+// 12<13 ? console.log('True') : console.log('False');
+
+// -------------------------Nested Ternary Opetators-------------------------
+
+// let num = 0;
+
+// console.log(num>0 ? "positive" : num<0 ? "negative" : "Neutral");
+
+// -------------------------Switches in JS-------------------------
+
+// let day = 3;
+
+// switch (day) {
+//     case 1:
+//         console.log('Monday');
+//         break;
+
+//     case 2:
+//         console.log('Tuesday');
+//         break;
+
+//     default:
+//         console.log('Invalid');
+//         break;
+// }
+
+let day = 3;
+
+switch (day) {
+  case 1:
+  case 2:
+  case 3:
+    console.log("Monday");
+    break;
+
+  case 4:
+  case 5:
+  case 6:
+    console.log("Tuesday");
+    break;
+
+  default:
+    console.log("Invalid");
+    break;
 }
