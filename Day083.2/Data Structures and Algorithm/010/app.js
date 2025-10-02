@@ -60,5 +60,29 @@
 
 // console.log("Factorial is: " + factorial(5));
 
-// -------------------------------Fibonacci Series-------------------------------
+// -------------------------------Fibonacci N Terms-------------------------------
 
+// function fibonnaciNTerms(n, first, second) {
+//   if (n == 0) {
+//     return;
+//   }
+//   let third = first + second;
+//   process.stdout.write(third + " ");
+//   fibonnaciNTerms(n-1, second, third);
+// }
+
+// let n = 10;
+// process.stdout.write(0 + " " + 1 + " ");
+// fibonnaciNTerms(n - 2, 0, 1);
+
+// -------------------------------Fibonacci Nth Term-------------------------------
+
+function fibonnaciNTerms(n) {
+  if (n == 0 || n==1) {
+    return n;
+  } 
+  return fibonnaciNTerms(n - 1) + fibonnaciNTerms(n - 2);
+}
+
+let n = 10;
+console.log("The sum is " + fibonnaciNTerms(n-1));
