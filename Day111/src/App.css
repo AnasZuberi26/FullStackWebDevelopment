@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial;
+  background: linear-gradient(180deg, #e8edf3, #f4f7fa);
+  min-height: 100vh;
+}
+
+/* Main wrapper */
+.container {
+  width: 100%;
+  /* max-width: 900px; */
+  margin: 40px auto;
+  padding: 10px;
+}
+
+.container h1 {
+  font-size: 30px;
+  margin-bottom: 24px;
+  font-weight: 700;
+  color: #0f172a; /* deep navy */
+}
+
+/* List view: each card sits in its own row */
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: center;
+  width: 100%;
+}

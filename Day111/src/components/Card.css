@@ -1,0 +1,64 @@
+:root {
+  --card-bg: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.08);
+  --accent: #0ea5a4;       /* teal accent */
+  --accent-light: #75e2dd;
+  --title: #0f172a;        /* dark navy */
+  --body: #475569;         /* slate grey */
+}
+
+/* List-style card */
+.card {
+  width: 80%;
+  background: var(--card-bg);
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Accent bar on the left */
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(var(--accent), var(--accent-light));
+  border-radius: 6px 0 0 6px;
+}
+
+/* hover animation */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.15);
+}
+
+/* Title */
+.card h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--title);
+  text-transform: capitalize;
+}
+
+/* Description */
+.card p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--body);
+  line-height: 1.6;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .card {
+    width: 80%;
+    padding: 18px;
+  }
+}
