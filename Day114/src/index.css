@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+body {
+  --tw-bg-opacity: 1;
+  background-color: var(--color-indigo-200)
+}
